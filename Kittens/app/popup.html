@@ -3,6 +3,20 @@
 <head>
     <title>Getting Started Extension's Popup</title>
     <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <style>
+        body {
+            min-width: 357px;
+            overflow-x: hidden;
+        }
+
+        img {
+            margin: 5px;
+            border: 2px solid black;
+            vertical-align: middle;
+            width: 75px;
+            height: 75px;
+        }
+    </style>
     <!--
       - JavaScript and HTML must be in separate files: see our Content Security
       - Policy documentation[1] for details and explanation.
@@ -11,15 +25,15 @@
      -->
 </head>
 <body ng-app="KittensApp">
-    <div ng-controller="app.controllers.ImageController as vm" class="row">
-        <div class="col-lg-6">
+    <div ng-controller="app.controllers.ImageController as vm">
+        <div>
             <div class="input-group">
                 <input type="text" class="form-control" ng-model="vm.text" />
                 <span class="input-group-btn">
                     <input type="button" value="Search" class="btn btn-primary" ng-click="vm.searchImage()" />
                 </span>
-        </div>
-        <img ng-repeat="image in vm.images" ng-src="{{image.imageUrl}}"
+            </div>
+            <img ng-repeat="image in vm.images" ng-src="{{image.imageUrl}}"
                  alt="{{image.text}}" class="img-thumbnail" />
         </div>
     </div>
