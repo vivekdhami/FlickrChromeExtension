@@ -8,6 +8,6 @@
 
     myApp.value(
         "apiKey",
-        "17e007fe58b70f25cfe08295d6dbcedc");
+        "86173bbbea093e7dd20bb57d8b67f38f");
 
 })();

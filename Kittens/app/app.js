@@ -2,5 +2,5 @@
     'use strict';
     var myApp = angular
         .module('KittensApp', []);
-    myApp.value("apiKey", "17e007fe58b70f25cfe08295d6dbcedc");
+    myApp.value("apiKey", "86173bbbea093e7dd20bb57d8b67f38f");
 })();
