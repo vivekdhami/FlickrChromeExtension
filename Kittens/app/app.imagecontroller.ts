@@ -2,20 +2,20 @@
 
     'use strict';
 
-    interface IKittensScope {
-        images: IKittenImage[];
+    interface IImageScope {
+        images: IImage[];
         text: string;
         constructImgUrl(kitten: app.services.IFlickr): string;
         searchImage(text: string): void;
     }
 
-    interface IKittenImage {
+    interface IImage {
         imageUrl: string;
         text: string;
     }
 
-    class KittensController implements IKittensScope {
-        images: IKittenImage[];
+    class KittensController implements IImageScope {
+        images: IImage[];
         text: string;
 
         static $inject = ['app.services.FlickrService'];
@@ -52,6 +52,6 @@
 
     angular
         .module('KittensApp')
-        .controller('app.controllers.KittensController',
+        .controller('app.controllers.ImageController',
             KittensController);
 };

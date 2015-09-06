@@ -63,7 +63,7 @@
     <Content Include="app\manifest.json" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="app\app.kittenscontroller.ts" />
+    <TypeScriptCompile Include="app\app.imagecontroller.ts" />
     <TypeScriptCompile Include="app\app.flickrservice.ts" />
     <TypeScriptCompile Include="app\app.ts" />
     <TypeScriptCompile Include="app\scripts\typings\angularjs\angular-animate.d.ts" />
